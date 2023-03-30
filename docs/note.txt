@@ -1,0 +1,13 @@
+Pindahkan directory kedalam folder yang sama dengan server kemudian jalankan dengan command :
+- multithreading http
+ab -n 1000 -c 10 -r -k -s 9999 http://127.0.0.1:8889/
+ganti dan coba concurency pada 10, 50, 100, 150, dan 200
+
+- multithreading http secure
+ab -n 1000 -c 200 -r -k -s 9999 https://127.0.0.1:8443/
+ganti dan coba concurency pada 10, 50, 100, 150, dan 200
+
+-multiprocessing http
+ab -n 1000 -c 10 -r -k -s 9999 http://127.0.0.1:8889/
+ganti dan coba concurency pada 10, 50, 100, 150, dan 200
+note : process stuck dan masih belum bisa di test
